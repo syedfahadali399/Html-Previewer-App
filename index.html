@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Previewer App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <main class="main">
+        <section id="section" class="section">
+            <h2 class="para">HTML Previewer App</h2>
+            <div class="controls">
+               <div class="btn-group">
+                   <button id="clear-html" type="reset">Clear</button>
+                   <button id="sample-html" type="button">Sample</button>
+                   <button id="copy-html" type="button">Copy</button>
+               </div>
+               <div class="toggle">
+                  <label class="text" for="darkmode">Dark Mode</label>
+                  <input class="checkbox" type="checkbox" id="mode">
+               </div>
+           </div>
+
+
+       <div class="code-section">
+           <div class="type-section">
+             <h2 class="small-para">Write HTML Here</h2>
+             <textarea id="html-input"><p>Type anything!</p>
+             </textarea>
+           </div>
+           <div class="preview-section">
+               <h2 class="small-para">Output</h2>
+               <div class="preview" id="preview-html">
+                  <p>Type anything!</p>
+               </div>
+           </div>
+       </div>
+       </section>
+    </main>
+    <script src="java.js"></script>
+</body>
+</html>
